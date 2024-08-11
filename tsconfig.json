@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
+    "target": "ES2017",
+=======
     "target": "es5",
+>>>>>>> upstream/master
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,6 +22,10 @@
         "name": "next"
       }
     ],
+<<<<<<< HEAD
+    "baseUrl": ".",
+=======
+>>>>>>> upstream/master
     "paths": {
       "@/*": ["./*"]
     }
@@ -27,7 +35,11 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
+<<<<<<< HEAD
+    "app/lib/placeholder-data.ts",
+=======
     "app/lib/placeholder-data.js",
+>>>>>>> upstream/master
     "scripts/seed.js"
   ],
   "exclude": ["node_modules"]

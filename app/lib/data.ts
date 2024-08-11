@@ -5,11 +5,21 @@ import {
   InvoiceForm,
   InvoicesTable,
   LatestInvoiceRaw,
+<<<<<<< HEAD
+=======
+  User,
+>>>>>>> upstream/master
   Revenue,
 } from './definitions';
 import { formatCurrency } from './utils';
 
 export async function fetchRevenue() {
+<<<<<<< HEAD
+=======
+  // Add noStore() here to prevent the response from being cached.
+  // This is equivalent to in fetch(..., {cache: 'no-store'}).
+
+>>>>>>> upstream/master
   try {
     // Artificially delay a response for demo purposes.
     // Don't do this in production :)
@@ -215,3 +225,16 @@ export async function fetchFilteredCustomers(query: string) {
     throw new Error('Failed to fetch customer table.');
   }
 }
+<<<<<<< HEAD
+=======
+
+export async function getUser(email: string) {
+  try {
+    const user = await sql`SELECT * FROM users WHERE email=${email}`;
+    return user.rows[0] as User;
+  } catch (error) {
+    console.error('Failed to fetch user:', error);
+    throw new Error('Failed to fetch user.');
+  }
+}
+>>>>>>> upstream/master

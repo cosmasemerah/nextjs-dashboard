@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { fetchFilteredCustomers } from '@/app/lib/data';
 import CustomersTable from '@/app/ui/customers/table';
 import { Metadata } from 'next';
@@ -23,4 +24,8 @@ export default async function Page({
       <CustomersTable customers={customers} />
     </main>
   );
+=======
+export default function Customers() {
+  return <p>Customers Page</p>;
+>>>>>>> upstream/master
 }
